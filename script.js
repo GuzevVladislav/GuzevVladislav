@@ -10,11 +10,21 @@ let btn = document.getElementById('kol');
 let prodTypes = [150, 240, 119];
 let prod;
 
+function amount0()
+{
+    if(amount.value < -1)
+    {
+        alert("Введено отрицательное значение");
+    }
+}
+
 for(let i = 0; i < 2; i++)
 {
     checkboxes[i].onclick = function()
     {
+        amount0();
         check1();
+        
     }
 }
 
