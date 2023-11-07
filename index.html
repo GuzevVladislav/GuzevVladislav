@@ -2,41 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+    <title>Slider</title>
 </head>
 <body>
     <div class="container">
-        
-        <form>
-        <input id="input__amount" type="number" required placeholder="количество"> <br>
-        <div id="prodPrice">Выберите тип товара</div>
-        Тип товара:
-        <div class="wrapper">
-            <select name="prodType" id="Goods">
-                <option value="1">Product 1</option>
-                <option value="2">Product 2</option>
-                <option value="3">Product 3</option>
-            </select>
-            <div class="wrapper"><div id="main__price">0</div>₽</div>
+        <div class="slider">
+            <div class="btn" id="prev"></div>
+            <img src="/1.jpg" class="slider-img" alt="#">
+            <img src="/2.jpg" class="slider-img for_mobile" alt="#">
+            <img src="/3.jpg" class="slider-img" alt="#">
+            <div class="btn" id="next"></div>
         </div>
-          
-          
-          <div id="radios">
-            <label><input type="radio" class="radio" name="prodOptions" value="1"> Опция 1</label> <br>
-            <label><input type="radio" class="radio" name="prodOptions" value="2"> Опция 2</label><br>
-            <label><input type="radio" class="radio" name="prodOptions" value="3"> Опция 3</label><br>
-          </div>
-          <div id="checkboxes">
-            <label><input class="check" type="checkbox" name="prop1" value="1"> Свойство 1</label><br>
-            <label><input class="check" type="checkbox" name="prop2" value="2"> Свойство 2</label><br>
-          </div>
+        <div class="points">
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+    </div>
+    
 
-        </form>
-        
+
+    <div class="example">
+        <img src="/1.jpg" alt="#">
+        <img src="/2.jpg" alt="#">
+        <img src="/3.jpg" alt="#">
+        <img src="/4.jpg" alt="#">
+        <img src="/5.jpg" alt="#">
+        <img src="/6.jpg" alt="#">
+        <img src="/7.jpg" alt="#">
+        <img src="/8.jpg" alt="#">
         
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
